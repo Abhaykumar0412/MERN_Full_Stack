@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- (-) General decendent -->
+    <!-- <style>
+        .grandparent .child{
+            color: red;
+        }
+    </style> -->
+
+
+    <!-- (>) direct child -->
+    <!-- <style>
+        .grandparent>.child{
+            color: red;
+        }
+    </style> -->
+
+
+    <!-- (+) adjecint sivling -->
+    <style>
+        /* .grandparent .child{
+            color: red;
+        } */
+
+        .child+.childnew{
+            color: blue;
+        }
+        .child+.child{
+            color: green;
+        }
+
+        /* (~) genral sivling */
+        .child~.child{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="child">I am inside grandparent</div>
+        <div class="parent">
+        <div class="child">child 1</div>
+        <div class="child">child 2</div>
+        <div class="child">child 2</div>
+        <div class="childnew">child new</div>
+    </div>
+    <div class="child">child 2</div>
+    </div>
+    
+</body>
+</html>

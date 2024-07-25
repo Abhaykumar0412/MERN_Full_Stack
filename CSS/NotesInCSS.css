@@ -1,0 +1,62 @@
+What is CSS ?
+
+What is Cascading Style sheet?
+Cascading is an algorithem. and 
+There are 3 ways of css
+Sabse jada priority (Inline CSS > Internal CSS = External CSS)
+Inline CSS
+Internal CSS (Head ke ander style tag lagate hai or us me kuch style likh sakte hai)
+External CSS
+
+style, id is global attribute
+
+What is selectors?
+
+Sabse jada priority (Id>Class>Elemrnt (ICE))
+Types of selectors
+Element selectors (Element selector is select the element with the help of element name)
+class selectors (class ko access karne ke liye . lagate hai. Ek element me multiple class de sakte hai. Or Ek class ko multiple jagaha bhi use kar sakte hai.)
+id selectors (Id ko # se likhte hai. Id is alwaya unic)
+attribute selectors (Adsinoal information provide karta hai html tag ko. Hmm kisi ko attribute se bhi select kar sakte hai )
+universal selectors (is ke andar jo bhi property apply karege bo har kisi pe apply ho jaegi. is ko * se use karte hai is me kuch special propert ka use karte hai or top per lagate hai )
+combinators selectors
+pseudo selectors
+
+What is units?
+
+Types of units
+Relative units (jo kisi na kisi or property per dependent hoti hai)
+vh, vw -> screen
+% -> parent
+rem -> This is a depend on root (rem me hmm parent ko 2rem ka size de rahe h to bo child per bhi follow hoga. or child ko bhi 2rem ka size de rahe he to bo same rahe ga )
+em -> em is depend on parent (em me hmm parent ko 2em ka size de rahe h to bo child per bhi follow hoga. or child ko bhi 2em ka size de rahe he to child 2em or bad)
+Absolute units(are always fixed units. Or jo kisi or property per dependent nhi hoti )
+
+Div is just a container
+
+<html lang="en"> -> this is a root element
+
+What is rgba?
+
+shortcut .box -> (<div class="box"></div>)
+
+display: flex; -> se coloum se row me convert ho jata hai
+
+flex-direction: column; -> se row se coloum me convert ho jata hai
+
+What is Combinator?
+- Genreal decending
++
+~
+>
+
+What is position?
+Static -> Default
+Relative -> 1= Do not leave space
+            2= Depends on orginal position
+Absolute -> 1= Leaves the space
+            2= (Nearest ancestio with position relative) parent
+Fixed ->    1= Leave the space
+            2= Relative to screen
+Sticky ->   1= Do not leave space
+            2= Fixed-> Container, Page-> Relative

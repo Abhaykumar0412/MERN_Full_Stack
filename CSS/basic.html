@@ -1,0 +1,132 @@
+<!-- Inline CSS -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: yellow ; background-color: blue;">I am a h1 tag</h1>
+
+</body>
+</html> -->
+
+
+
+<!-- Internal CSS -->
+ <!-- Head ke ander style tag lagate hai or us me kuch style likh sakte hai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* universal selectors */
+        *{
+            background-color: yellow;
+        }
+
+
+        /* Element Selectors */
+        /* p{
+            color: blue;
+        } */
+
+
+        /* Class selectors */ 
+        /* class ko access karne ke liye . lagate hai */
+
+        /* .text-blue{
+            color: blue;
+        }
+        .bg-red{
+            background-color: red;
+        } */
+
+
+        /* Id Selectors */
+        #P1{
+            font-size: 2rem;
+        }
+
+
+        /* Attribute selectors */
+        [href="abc"]{
+            text-decoration: overline;
+        }
+
+
+        /* Pseudo selectors */
+        .h2tag:hover{
+            font-size: 3rem;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    Element Selectors
+    <h1 style="color: yellow ; background-color: blue;">I am a h1 tag</h1>
+    
+    <h2>I am h2 tag</h2>
+
+    <p>I am P1 tag</p>
+
+    <p>I am P2 tag</p>
+
+    <p>I am P3 tag</p>
+
+    <br><br>
+
+    Class selectors
+    <h1 style="color: yellow ; background-color: blue;">I am a h1 tag</h1>
+    
+    <h2>I am h2 tag</h2>
+
+    <p>I am P1 tag</p>
+
+    <p class="text-blue bg-red">I am P2 tag</p>
+
+    <p>I am P3 tag</p>
+
+    <br><br>
+
+    Id Selectors
+    <br>
+    Id ko # se likhte hai
+    <h1 style="color: yellow ; background-color: blue;">I am a h1 tag</h1>
+    
+    <h2>I am h2 tag</h2>
+
+    <p id="P1">I am P1 tag</p>
+
+    <p class="text-blue bg-red">I am P2 tag</p>
+
+    <p>I am P3 tag</p>
+
+    <br><br>
+
+    Attribute selectors
+    <h1 style="color: yellow ; background-color: blue;">I am a h1 tag</h1>
+    
+    <h2>I am h2 tag</h2>
+
+    <a href="abc">I am anchor tag</a>
+
+    <br><br><br>
+
+    Universal selectors
+
+    <br><br><br>
+
+    Pseudo selectors
+    <h1 style="color: yellow ; background-color: blue;">I am a h1 tag</h1>
+    
+    <h2 class="h2tag">I am h2 tag</h2>
+
+    <a href="abc">I am anchor tag</a>
+</body>
+</html>
