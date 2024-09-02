@@ -1,0 +1,17 @@
+{
+  "name": "basics",
+  "version": "1.0.0",
+  "main": "14_fileOne.js",
+  "type": "module",
+  "scripts": {
+    "start": "node 14_fileOne.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "learning filesystem module",
+  "dependencies": {
+    "figlet": "^1.7.0",
+    "text-to-speech-converter": "^1.2.0"
+  },
+  "devDependencies": {}
+}

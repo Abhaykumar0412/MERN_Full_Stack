@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Leacture 13
+
+
+
+    // function makeMaggi(raw){
+    //     let maggiPromise = new Promise((resolve , reject) =>{
+    //         if (raw){
+    //             setTimeout(() => {resolve("maggi is ready")},2000)
+    //         }else{
+    //             reject ("Not avbilable")
+    //         }
+    //     })
+    //     return maggiPromise
+
+    // }
+    // console.log(makeMaggi("maggi"))
+
+
+
+    function makeMaggi(raw){
+        let maggiPromise = new Promise((resolve , reject) =>{
+            if (raw){
+                setTimeout(() => {resolve("maggi is ready")},2000)
+            }else{
+                reject ("Not avbilable")
+            }
+        })
+        return maggiPromise
+
+    }
+    console.log("Start")
+
+    makeMaggi("maggi").then((result) =>{
+        console.log(result)
+    }).catch((result) => {                 //result error
+        console.log(result)
+    })
+
+    console.log("End")
+</script>
+</html>

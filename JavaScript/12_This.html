@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //when a function is writeen in a obj that is called method 
+
+
+    //arrow function ------ "this" keyword depend on where the function is called
+
+    //normal function ----- " this" keyword refers to where the function is present
+
+
+
+    // console.log(this)
+
+
+
+    // let obj = {
+    //     name: "Abhay",
+    //     age: 23,
+    //     normalfunction: function () {
+    //         console.log(this)
+    //     }
+    // }
+    // obj.normalfunction();
+
+
+
+    // let obj = {
+    //     name: "Abhay",
+    //     age: 23,
+    //     normalFunction: function () {
+    //         console.log(this)
+    //     },
+    //     arrowFunction : () =>{
+    //         console.log(this)
+    //     }
+    // }
+    // console.log("outside the object", this)
+    // obj.normalFunction();
+    // obj.arrowFunction();
+
+
+
+    // function normal() {
+    //     console.log(this)
+    // }
+    // normal()
+
+
+
+    // let arrow = () =>{
+    //     console.log(this)
+    // }
+    // arrow()
+
+
+
+    // const shape ={
+    //     radius : 10,
+    //     diameter (){
+    //         return this.radius*2
+    //     },
+    //     perimeter: () => 2*Math.PI * this.radius,
+    // };
+    // console.log(shape.diameter())
+    // console.log(shape.perimeter())
+
+
+
+    function abc(){
+        let c = 5
+        let fn = () =>{
+            console.log(c)
+        }
+        fn()
+    }
+    abc()
+</script>
+
+</html>

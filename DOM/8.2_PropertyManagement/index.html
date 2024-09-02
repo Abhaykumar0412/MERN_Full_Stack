@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: opx;
+            box-sizing: border-box;
+        }
+
+        
+
+        .utility {
+            height: 10%;
+            width: 100%;
+            background-color: #7D8ABC;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            height: 90%;
+            width: 100%;
+            background-color: #FAFFAF;
+            /* position: relative; */
+        }
+
+        .task {
+            height: 170px;
+            width: 320px;
+            background-color: #96C9F4;
+            left: 35vw;
+            top: 20vh;
+            /* position: absolute; */
+        }
+
+        .ticket {
+            background-color: #3FA2F6;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            margin: 10px;
+            align-items: center;
+            /* position: relative; */
+        }
+
+        .navbar {
+            height: 80%;
+            width: 10%;
+            background-color: #FFC7ED;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="utility">
+        <div class="navbar">
+            <span class="delete"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                    fill="currentColor">
+                    <path
+                        d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM9 11V17H11V11H9ZM13 11V17H15V11H13ZM9 4V6H15V4H9Z">
+                    </path>
+                </svg></span>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="task">
+            <br>
+            <label>Owner :</label>
+            <input id="owner" type="text" placeholder="xyz">
+            <br><br>
+            <label>Property Name :</label>
+            <input id="city" type="text" placeholder="xyz">
+            <br><br>
+            <label>Size :</label>
+            <input id="size" type="number" placeholder=" 1234">
+            <br><br>
+            <button id="addbtn">ADD</button>
+        </div>
+
+        <div class="cont"></div>
+
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
