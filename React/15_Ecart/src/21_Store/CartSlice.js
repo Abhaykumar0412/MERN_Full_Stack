@@ -48,10 +48,27 @@ const CartSlice = createSlice({
             }
         },
         clearCart: (start, action) => {
-            start.cart.length=0
-         }
+            start.cart.length = 0
+        },
+
+         AscendingRating: (state) => {
+            let cartItems = state.cart
+
+            cartItems.sort((a, b) => {
+                return a.data.rating - b.data.rating;
+            })
+            state.cart = cartItems
+        },
+         DesecndingRating: (state) => {
+            let cartItems = state.cart
+
+            cartItems.sort((a, b) => {
+                return b.data.rating - a.data.rating;
+            })
+            state.cart = cartItems
+        }
     }
 })
 
-export const { addCart, removeCart, QuantityIncrease, QuantityDecrese, clearCart } = CartSlice.actions
+export const { addCart, removeCart, QuantityIncrease, QuantityDecrese, clearCart, AscendingRating, DesecndingRating } = CartSlice.actions
 export default CartSlice.reducer
